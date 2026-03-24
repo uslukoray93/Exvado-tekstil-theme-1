@@ -166,7 +166,7 @@ export default function Header() {
                       {categories.map((category) => (
                         <Link
                           key={category.name}
-                          href={`/categories/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+                          href="/products"
                           className={`flex items-center justify-between px-4 py-2.5 text-sm font-medium transition-all ${
                             hoveredCategory === category.name
                               ? 'bg-white text-[#0080FF] border-r-4 border-[#0080FF]'
@@ -195,7 +195,7 @@ export default function Header() {
                               ?.subcategories.map((sub) => (
                                 <Link
                                   key={sub}
-                                  href={`/categories/${hoveredCategory.toLowerCase()}/${sub.toLowerCase().replace(/\s+/g, '-')}`}
+                                  href="/products"
                                   className="block px-3 py-2 text-sm text-gray-700 hover:text-[#FF7A3D] hover:bg-gray-50 transition-all"
                                 >
                                   {sub}
@@ -224,7 +224,7 @@ export default function Header() {
                         onMouseLeave={() => setOpenDropdown(null)}
                       >
                         <Link
-                          href={`/categories/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+                          href="/products"
                           className="text-gray-700 hover:text-[#FF7A3D] font-medium whitespace-nowrap transition-colors text-[15px] h-full flex items-center px-3 space-x-1"
                         >
                           <span>{category.name}</span>
@@ -238,7 +238,7 @@ export default function Header() {
                             {category.subcategories.map((sub) => (
                               <Link
                                 key={sub}
-                                href={`/categories/${category.name.toLowerCase()}/${sub.toLowerCase().replace(/\s+/g, '-')}`}
+                                href="/products"
                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FF7A3D] hover:text-white transition-colors"
                               >
                                 {sub}
@@ -249,7 +249,7 @@ export default function Header() {
                       </div>
                     ) : (
                       <Link
-                        href={`/categories/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+                        href="/products"
                         className="text-gray-700 hover:text-[#FF7A3D] font-medium whitespace-nowrap transition-colors text-[15px] h-full flex items-center px-3"
                       >
                         {category.name}
@@ -283,11 +283,11 @@ export default function Header() {
             <div className="space-y-2">
               {categories.map((category) => (
                 <Link
-                  key={category}
-                  href={`/categories/${category.toLowerCase().replace(/\s+/g, '-')}`}
+                  key={category.name}
+                  href="/products"
                   className="block py-2 text-gray-700 hover:text-[#FF7A3D]"
                 >
-                  {category}
+                  {category.name}
                 </Link>
               ))}
             </div>
