@@ -1,18 +1,18 @@
 import ProductCard from "@/components/ProductCard";
 
 const allProducts = [
-  { id: 1, name: "Premium Viskon Kumaş - Desenli", price: 89, image: "/images/product1.jpg", category: "Viskon", badge: "%50" },
-  { id: 2, name: "Pamuklu Poplin Kumaş - Nevresimlik", price: 65, image: "/images/product2.jpg", category: "Poplin", badge: "Çok Satan" },
-  { id: 3, name: "Doğal Keten Kumaş - Ham Renk", price: 125, image: "/images/product3.jpg", category: "Keten" },
-  { id: 4, name: "İthal Kadife Kumaş - Lüks", price: 180, image: "/images/product4.jpg", category: "Kadife", badge: "İthal" },
-  { id: 5, name: "İpek Şifon Kumaş - Abiye", price: 220, image: "/images/product5.jpg", category: "Şifon" },
-  { id: 6, name: "Pamuklu Penye Kumaş - Çocuk", price: 45, image: "/images/product6.jpg", category: "Penye", badge: "Yeni" },
-  { id: 7, name: "Polyester Saten Kumaş - Parlak", price: 75, image: "/images/product7.jpg", category: "Saten" },
-  { id: 8, name: "İnce Dantel Kumaş - Beyaz", price: 140, image: "/images/product8.jpg", category: "Dantel" },
-  { id: 9, name: "Kot Kumaş - Denim", price: 95, image: "/images/product9.jpg", category: "Kot" },
-  { id: 10, name: "Vual Kumaş - Tül", price: 55, image: "/images/product10.jpg", category: "Vual" },
-  { id: 11, name: "Poliviskon Kumaş - Desenli", price: 78, image: "/images/product11.jpg", category: "Viskon" },
-  { id: 12, name: "İpek Kadife Kumaş - Premium", price: 350, image: "/images/product12.jpg", category: "Kadife", badge: "%40" },
+  { id: 1, name: "Premium Viskon Kumaş - Desenli", price: 89, oldPrice: 178, image: "https://picsum.photos/seed/prod1/600/800", secondImage: "https://picsum.photos/seed/prod1b/600/800", category: "Viskon", badge: "%50" },
+  { id: 2, name: "Pamuklu Poplin Kumaş - Nevresimlik", price: 65, oldPrice: 95, image: "https://picsum.photos/seed/prod2/600/800", secondImage: "https://picsum.photos/seed/prod2b/600/800", category: "Poplin", badge: "Çok Satan" },
+  { id: 3, name: "Doğal Keten Kumaş - Ham Renk", price: 125, oldPrice: 160, image: "https://picsum.photos/seed/prod3/600/800", secondImage: "https://picsum.photos/seed/prod3b/600/800", category: "Keten" },
+  { id: 4, name: "İthal Kadife Kumaş - Lüks", price: 180, oldPrice: 240, image: "https://picsum.photos/seed/prod4/600/800", secondImage: "https://picsum.photos/seed/prod4b/600/800", category: "Kadife", badge: "İthal" },
+  { id: 5, name: "İpek Şifon Kumaş - Abiye", price: 220, oldPrice: 280, image: "https://picsum.photos/seed/prod5/600/800", secondImage: "https://picsum.photos/seed/prod5b/600/800", category: "Şifon" },
+  { id: 6, name: "Pamuklu Penye Kumaş - Çocuk", price: 45, oldPrice: 65, image: "https://picsum.photos/seed/prod6/600/800", secondImage: "https://picsum.photos/seed/prod6b/600/800", category: "Penye", badge: "Yeni" },
+  { id: 7, name: "Polyester Saten Kumaş - Parlak", price: 75, oldPrice: 110, image: "https://picsum.photos/seed/prod7/600/800", secondImage: "https://picsum.photos/seed/prod7b/600/800", category: "Saten" },
+  { id: 8, name: "İnce Dantel Kumaş - Beyaz", price: 140, oldPrice: 185, image: "https://picsum.photos/seed/prod8/600/800", secondImage: "https://picsum.photos/seed/prod8b/600/800", category: "Dantel" },
+  { id: 9, name: "Viskon Karışımlı Kumaş - Çiçek Desenli", price: 95, oldPrice: 135, image: "https://picsum.photos/seed/prod9/600/800", secondImage: "https://picsum.photos/seed/prod9b/600/800", category: "Viskon" },
+  { id: 10, name: "Tül Kumaş - İşlemeli", price: 55, oldPrice: 85, image: "https://picsum.photos/seed/prod10/600/800", secondImage: "https://picsum.photos/seed/prod10b/600/800", category: "Tül" },
+  { id: 11, name: "Poliviskon Kumaş - Desenli", price: 78, oldPrice: 120, image: "https://picsum.photos/seed/prod11/600/800", secondImage: "https://picsum.photos/seed/prod11b/600/800", category: "Viskon" },
+  { id: 12, name: "İpek Kadife Kumaş - Premium", price: 350, oldPrice: 580, image: "https://picsum.photos/seed/prod12/600/800", secondImage: "https://picsum.photos/seed/prod12b/600/800", category: "Kadife", badge: "%40" },
 ];
 
 export default function ProductsPage() {
